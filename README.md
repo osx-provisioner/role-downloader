@@ -1,12 +1,10 @@
 # role-downloader
 
 ### Master:
-- Travis CI: ![TravisCI](https://travis-ci.com/osx-provisioner/role-downloader.svg?branch=master)
-- Github Actions: [![role-downloader](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml/badge.svg?branch=master)](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml)
+[![role-downloader](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml/badge.svg?branch=master)](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml)
 
 ### Production:
-- Travis CI: ![TravisCI](https://travis-ci.com/osx-provisioner/role-downloader.svg?branch=production)
-- Github Actions: [![role-downloader](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml/badge.svg?branch=production)](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml)
+[![role-downloader](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml/badge.svg?branch=production)](https://github.com/osx-provisioner/role-downloader/actions/workflows/push.yml)
 
 Ansible role that fetches remote content and places it in a configurable location.
 
@@ -68,7 +66,7 @@ Example Playbook
 License
 -------
 
-MPL-2
+MIT
 
 Author Information
 ------------------
