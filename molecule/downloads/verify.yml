@@ -4,20 +4,20 @@
   gather_facts: false
   tasks:
     - name: Load Scenario Variables
-      include_vars: vars/main.yml
+      ansible.builtin.include_vars: vars/main.yml
     - name: Check Downloaded Content
       ansible.builtin.stat:
         path: "{{ download_save_location }}/{{ item.name }}"
       register: check_content
       loop: "{{ download_remote_urls }}"
     - name: Assert Files Exist
-      assert:
+      ansible.builtin.assert:
         that:
           - item.stat.exists
         msg: "{{ download_save_location }}/{{ item.item.name }} does not exist."
       loop: "{{ check_content.results }}"
     - name: Assert Files Have Correct Attributes
-      assert:
+      ansible.builtin.assert:
         that:
           - item.stat.mode == '0644'
           - item.stat.pw_name == download_save_user
