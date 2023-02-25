@@ -51,7 +51,7 @@ Example Playbook
 ----------------
 
 ```yaml
-- hosts: web
+- hosts: all
   roles:
   - role: osx_provisioner.downloader
     download_remote_urls:
